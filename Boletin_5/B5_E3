@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>EJERCICIO 3</title>
+    </head>
+    <body>
+        <h1>Introduce "Numero 1", "Numero 2", la operacion que quieres realizar y pulsa el boton de "Operar"</h1>
+        <form action="operar.php" method="post"> <!-- Lllamamos al formulario con el primer atributo, 
+                                                 con el segundo definimos el metodo de enviar la informacion -->
+            Numero 1: <input type="number" name="n1"><br>
+            Numero 2: <input type="number" name="n2"><br>
+            <!-- Se introducira aqui los valores para trabajar con el fichero php.-->
+            Selecciona una opcion<br>
+            <select name="operacion">
+                <option value="sumar">Suma</option>
+                <option value="restar">Resta</option>
+                <option value="multiplicar">Multiplicacion</option>
+                <option value="dividir">division</option>
+                <!-- el usuario eligira una de las opciones -->
+            </select><br><br>
+            <input type="submit" value="operar">
+            <!-- Boton ejecutio con el que se iniciara el envio de datos al fichero php. -->         
+        </form>
+    </body>
+</html>
