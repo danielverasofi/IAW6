@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>B5_E5</title>
+    </head>
+    <body>
+        <h1>Selecciona tu erquipo favorito</h1>
+        <p><b>¿Real Madrid o Barcelona?</b></p>
+        <p>(Selecciona uno de ellos y pulsa en "colorea" para sentir sus colores)</p>
+        <form action="colores.php" method="post">
+            <!--LLamamos al formulario y al fichero php con el primer atributo, el segundo determina la forma de enviar-->
+        <select name="equipos">
+            <option value="madrid">Real Madrid</option>
+            <option value="barcelona">F.C Barcelona</option>
+            <!-- el usuario eligira una de las dos opciones para enviar al archivo php-->
+        </select><br><br>
+        <input type="submit" value="Colorea"><!--Boton para enviar la opcion señalada en el formulario al archivo php colores.-->          
+        </form>
+    </body>
+</html>
