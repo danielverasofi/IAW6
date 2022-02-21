@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <?php
+        $setcookie = setcookie('nombre', 'Daniel Vera'); //Añadiendo la funcion setcookie crearemos una cookie llamada nombre y con valor de Daniel.
+        /* @var $_COOKIE type */
+        echo $_COOKIE['nombre'];       //Muestra el valor de la variable asociativa.
+        ?>
+    </body>
+</html>
