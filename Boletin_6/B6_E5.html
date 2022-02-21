@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>B6_E5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>¿Cómo te llamas? Escribe y envía.</h1>
+        <form action="bienvenido.php" method="post"><!--Hacemos llamada al formulario y al fichero php bienvenido, 
+                                                    con el segundo atributo establecemos el método de enviar informacion.-->
+            Nombre: <input type="text" name="n"><br>
+            Apellidos: <input type="text" name="a"><br> <!-- El usuario introducira sus datos en el formulario, que a su vez trabajara con el fichero php-->
+            <br><br>
+            <input type="submit" value="Enviar"> <!-- Creamos el boton Enviar, al pulsarlo enviaremos la informacion al archivo php, definido en la primera etiqueta-->           
+        </form>
+    </body>
+</html>
